@@ -495,7 +495,7 @@ footer {
   box-sizing: border-box; }
 
 .hero {
-  background: url("/img_1/bg-main1.jpg") center center/cover no-repeat;
+  background: url("../img_1/bg-main1.jpg") center center/cover no-repeat;
   position: relative; }
 
 .hero__container {
@@ -521,7 +521,7 @@ footer {
   color: #fff; }
 
 .best {
-  background: url("/img_2/bg.jpg") center center/cover no-repeat; }
+  background: url("../img_2/bg.jpg") center center/cover no-repeat; }
 
 .best__list {
   display: -webkit-box;
@@ -700,4 +700,4 @@ footer {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: url("/img_1/arrow-scroll.svg"); }
+  background: url("../img_1/arrow-scroll.svg"); }
