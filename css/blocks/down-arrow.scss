@@ -1,0 +1,13 @@
+.down-arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('/img_1/arrow-scroll.svg');
+
+ }
+
+  
