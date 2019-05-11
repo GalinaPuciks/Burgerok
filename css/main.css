@@ -701,3 +701,51 @@ footer {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background: url("../img_1/arrow-scroll.svg"); }
+
+.fixed__menu {
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  padding: 0;
+  margin: 0; }
+
+.fixed__menu-item {
+  list-style: none;
+  margin-bottom: 7px; }
+
+.fixed__menu-link {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative; }
+
+.fixed__menu-link:before,
+.fixed__menu-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%; }
+
+.fixed__menu-link:before {
+  width: 0;
+  height: 0;
+  border: 2px solid white;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.fixed__menu-link:after {
+  width: 6px;
+  height: 6px;
+  background: white; }
+
+.fixed__menu-item.active .fixed__menu-link:before, .fixed__menu-link:hover:before {
+  width: 14px;
+  height: 14px;
+  opacity: 1; }
