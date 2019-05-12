@@ -5,7 +5,9 @@ $black: #2f3234;
 $red: #e35028;
 
 //normalize
-@import "_misc/normalize.scss";
+
+@import "_misc/normalize";
+
 
 // setups
 @import "_misc/mixins.scss";

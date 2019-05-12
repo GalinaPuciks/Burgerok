@@ -495,7 +495,7 @@ footer {
   box-sizing: border-box; }
 
 .hero {
-  background: url("../img_1/bg-main1.jpg") center center/cover no-repeat;
+  background: url("../img/img_hero/bg-main1.jpg") center center/cover no-repeat;
   position: relative; }
 
 .hero__container {
@@ -521,7 +521,7 @@ footer {
   color: #fff; }
 
 .best {
-  background: url("../img_2/bg.jpg") center center/cover no-repeat; }
+  background: url("../img/img_best/bg.jpg") center center/cover no-repeat; }
 
 .best__list {
   display: -webkit-box;
@@ -548,13 +548,16 @@ footer {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.feature__title {
+.feature__text {
+  font-size: 14px; }
+
+.feature__desc h3 {
   font-family: 'Lifehack-Medium';
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px; }
 
-.feature__text {
+.feature__desc p {
   font-size: 14px; }
 
 .reviews__list {
@@ -604,6 +607,9 @@ footer {
   font-weight: 300;
   line-height: 24px;
   padding-right: 33px; }
+
+.btn--bg-black {
+  border: none; }
 
 .header {
   display: -webkit-box;
@@ -700,7 +706,7 @@ footer {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: url("../img_1/arrow-scroll.svg"); }
+  background: url("../img/img_hero/arrow-scroll.svg"); }
 
 .fixed__menu {
   position: fixed;
