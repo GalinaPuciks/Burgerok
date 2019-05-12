@@ -1,0 +1,25 @@
+.feature__desc {
+    text-align: center;
+  }
+  
+  .feature__pic {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  
+  
+  .feature__text {
+    font-size: 14px;
+  }
+
+  .feature__desc h3  {
+    @include lifehack;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .feature__desc p {
+    font-size: 14px;
+  }
