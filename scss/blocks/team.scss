@@ -1,0 +1,16 @@
+.team {
+    background: url('../img/img_team/team_bg.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+
+   
+
+.team__block {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    background-color: #2f3234;
+    opacity: 0.93;
+    width: 50%;
+}
