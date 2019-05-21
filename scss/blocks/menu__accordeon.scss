@@ -6,23 +6,14 @@
 	@extend %clearfix;
 }
 
-.section__title-accordeon {
-	color: #ffffff;
-	@include gagalin;
-font-size: 72px;
-font-weight: 400;
-line-height: 64px;
-padding: 10% 10%;
-}
-
 .menu__accordeon-item {
 	float: left;
 	height: 100%;
 
 	&.active {
-		.menu__accordeon-text {
-			color: $yellow;
-		}
+			.menu__accordeon-text {
+					color: $yellow;
+			}
 	}
 }
 
@@ -33,11 +24,11 @@ padding: 10% 10%;
 	float: left;
 	@include cover;
 	text-decoration: none;
-  position: relative;
-  
-  @include phones {
-    width: rem(50px);
-  }
+position: relative;
+
+@include phones {
+	width: rem(50px);
+}
 }
 
 .menu__accordeon-text {
@@ -46,16 +37,16 @@ padding: 10% 10%;
 	@include gagalin;
 	text-align: center;
 	white-space: nowrap;
-  position: absolute;
-  transform: rotate(-90deg) translateY(-50%);
-  transform-origin: 0 0;
-  left: 50%;
-  top: 100%;
-  margin-top: rem(-20px);
+position: absolute;
+transform: rotate(-90deg) translateY(-50%);
+transform-origin: 0 0;
+left: 50%;
+top: 100%;
+margin-top: rem(-20px);
 
-  @include phones {
-    font-size: rem(26px);
-  }
+@include phones {
+	font-size: rem(26px);
+}
 }
 
 .menu__accordeon-content {
@@ -66,18 +57,34 @@ padding: 10% 10%;
 	overflow: hidden;
 }
 
-
-.menu__accordeon-desc {
+.menu__accodeon-desc {
 	@include ubuntu(light);
 	font-size: rem(14px);
 	color: #fff;
 	padding: rem(60px) rem(30px);
 	width: 100%;
-  line-height: 1.8;
-  display: none;
+line-height: 1.8;
+display: none;
 
-  @include phones {
-    padding: rem(25px) rem(15px);
-  }
+@include phones {
+	padding: rem(25px) rem(15px);
+}
+}
+
+.product__menu {
+	background: url('../img/img_menu/menu_bg.jpg') 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.section__title-accordeon {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: #ffffff;
+  @include gagalin;
+	font-size: 72px;
+	font-weight: 400;
+	line-height: 64.05px;
 }
 

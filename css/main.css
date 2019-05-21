@@ -932,48 +932,6 @@ img {
       background: rgba(47, 50, 52, 0.93);
       height: 100%; } }
 
-.product__menu {
-  background: url("../img/img_menu/menu_bg.jpg") center center/cover no-repeat;
-  position: relative; }
-
-.product__types {
-  position: relative; }
-
-.product__items {
-  position: absolute;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.product__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.product__title {
-  color: #ffffff;
-  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 64px; }
-
-.product__name {
-  color: #ffffff;
-  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 63.75px;
-  width: 100%;
-  -webkit-transform: rotate(-90deg);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content; }
-
-.product__desc {
-  width: 0;
-  overflow: hidden; }
-
 .order-link {
   width: 15%;
   display: inline-block;
@@ -1117,14 +1075,6 @@ img {
   top: 0;
   bottom: 0; }
 
-.section__title-accordeon {
-  color: #ffffff;
-  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 64px;
-  padding: 10% 10%; }
-
 .menu__accordeon-item {
   float: left;
   height: 100%; }
@@ -1172,7 +1122,7 @@ img {
   width: 0;
   overflow: hidden; }
 
-.menu__accordeon-desc {
+.menu__accodeon-desc {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
@@ -1182,20 +1132,23 @@ img {
   line-height: 1.8;
   display: none; }
   @media screen and (max-width: 480px) {
-    .menu__accordeon-desc {
+    .menu__accodeon-desc {
       padding: 1.5625rem 0.9375rem; } }
 
-.menu__accordeon-desc--active {
-  font-family: 'Ubuntu', Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 0.875rem;
-  color: #fff;
-  padding: 3.75rem 1.875rem;
-  width: 100%;
-  line-height: 1.8; }
-  @media screen and (max-width: 480px) {
-    .menu__accordeon-desc--active {
-      padding: 1.5625rem 0.9375rem; } }
+.product__menu {
+  background: url("../img/img_menu/menu_bg.jpg") 50% no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.section__title-accordeon {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #ffffff;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 64.05px; }
 
 .order {
   background: url("../img/img__order/order__bg.jpg") 50% no-repeat;
@@ -1346,7 +1299,7 @@ img {
   background: transparent; }
 
 .order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("../../img/icons/check.svg") 50% no-repeat transparent;
+  background: url("../img/img__order/check_mark.svg") 50% no-repeat transparent;
   background-size: contain;
   width: 0.6875rem;
   height: 0.5625rem; }
