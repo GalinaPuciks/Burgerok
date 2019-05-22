@@ -5,6 +5,9 @@
     display: flex;
     @include phones {
       display: flex;
+    }
+    @include tablets {
+      display: flex;
       flex-direction: column;
     }
   }

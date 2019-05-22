@@ -559,6 +559,11 @@ img {
     .best__list {
       display: -webkit-box;
       display: -ms-flexbox;
+      display: flex; } }
+  @media screen and (max-width: 768px) {
+    .best__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -596,6 +601,64 @@ img {
 
 .feature__desc p {
   font-size: 14px; }
+
+.best__item {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.feature__pic {
+  width: 90%;
+  height: 6.25rem; }
+  .feature__pic svg {
+    max-width: 95%; }
+  @media screen and (max-width: 480px) {
+    .feature__pic {
+      position: static;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
+
+.best__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 480px) {
+    .best__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.best__item {
+  margin-bottom: 3.125rem;
+  padding: 0 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    .best__item {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 1.5625rem; } }
+
+@media screen and (max-width: 480px) {
+  .best__icon {
+    margin-right: 1.25rem;
+    width: 30%; } }
+
+@media screen and (max-width: 480px) {
+  .feature__desc {
+    text-align: left;
+    display: block;
+    width: 65%; } }
 
 .reviews {
   background: #000; }
