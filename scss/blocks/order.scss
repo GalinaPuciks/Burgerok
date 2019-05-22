@@ -7,14 +7,22 @@
       text-align: center;
     }
   }
-  .section__title {
+
+  .section__title-order {
 
    color: #f9b43b;
    @include gagalin();
    font-size: 72px;
    font-weight: 400;
    line-height: 64.05px;
-  }
+   margin-bottom: 12%;
+   text-align: center;
+    @include tablets {
+        padding-top: 12%;
+    }
+}
+
+  
 
   .order__form {
     @extend %clearfix;

@@ -1081,6 +1081,10 @@ img {
   .menu__accordeon-item.active .menu__accordeon-text {
     color: #f9b43b; }
 
+.menu__accordeon-item--active {
+  float: left;
+  height: 100%; }
+
 .menu__accordeon-trigger {
   width: 5rem;
   display: block;
@@ -1093,6 +1097,19 @@ img {
   position: relative; }
   @media screen and (max-width: 480px) {
     .menu__accordeon-trigger {
+      width: 3.125rem; } }
+
+.menu__accordeon-trigger--active {
+  width: 5rem;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative; }
+  @media screen and (max-width: 480px) {
+    .menu__accordeon-trigger--active {
       width: 3.125rem; } }
 
 .menu__accordeon-text {
@@ -1115,12 +1132,44 @@ img {
     .menu__accordeon-text {
       font-size: 1.625rem; } }
 
+.menu__accordeon-text--active {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: -1.25rem; }
+  @media screen and (max-width: 480px) {
+    .menu__accordeon-text--active {
+      font-size: 1.625rem; } }
+
 .menu__accordeon-content {
   height: 100%;
   float: left;
   background: rgba(47, 50, 52, 0.93);
   width: 0;
   overflow: hidden; }
+
+.menu__accordeon-content--active {
+  height: 100%;
+  float: right;
+  background: rgba(47, 50, 52, 0.93);
+  width: 18.75rem;
+  z-index: 10;
+  overflow: visible;
+  color: #fff;
+  padding-top: 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem; }
 
 .menu__accodeon-desc {
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -1133,6 +1182,17 @@ img {
   display: none; }
   @media screen and (max-width: 480px) {
     .menu__accodeon-desc {
+      padding: 1.5625rem 0.9375rem; } }
+
+.menu__accodeon-desc--active {
+  font-family: Ubuntu;
+  font-size: 0.875rem;
+  color: white;
+  padding: 3.75rem 1.875rem;
+  width: 100%;
+  line-height: 1.8; }
+  @media screen and (max-width: 480px) {
+    .menu__accodeon-desc--active {
       padding: 1.5625rem 0.9375rem; } }
 
 .product__menu {
@@ -1162,12 +1222,17 @@ img {
   .order .section__title {
     text-align: center; }
 
-.section__title {
+.section__title-order {
   color: #f9b43b;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   font-size: 72px;
   font-weight: 400;
-  line-height: 64.05px; }
+  line-height: 64.05px;
+  margin-bottom: 12%;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .section__title-order {
+      padding-top: 12%; } }
 
 .order__form {
   margin-left: -5%; }

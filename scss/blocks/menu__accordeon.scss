@@ -17,9 +17,28 @@
 	}
 }
 
+.menu__accordeon-item--active {
+	float: left;
+	height: 100%;
+
+}
+
 .menu__accordeon-trigger {
 	width: rem(80px);
 	display: block;
+	height: 100%;
+	float: left;
+	@include cover;
+	text-decoration: none;
+position: relative;
+
+@include phones {
+	width: rem(50px);
+}
+}
+.menu__accordeon-trigger--active {
+	width: rem(80px);
+
 	height: 100%;
 	float: left;
 	@include cover;
@@ -48,6 +67,24 @@ margin-top: rem(-20px);
 	font-size: rem(26px);
 }
 }
+.menu__accordeon-text--active {
+	font-size: rem(40px);
+	color: #fff;
+	@include gagalin;
+	text-align: center;
+	white-space: nowrap;
+position: absolute;
+transform: rotate(-90deg) translateY(-50%);
+transform-origin: 0 0;
+left: 50%;
+top: 100%;
+margin-top: rem(-20px);
+
+@include phones {
+	font-size: rem(26px);
+}
+}
+
 
 .menu__accordeon-content {
 	height: 100%;
@@ -55,6 +92,19 @@ margin-top: rem(-20px);
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+}
+
+.menu__accordeon-content--active {
+	height: 100%;
+    float: right;
+	background: rgba(#2f3234, .93);
+	width: rem(300px);
+	z-index: 10;
+overflow: visible;
+color: #fff;
+padding-top: rem(50px);
+padding-left: rem(50px);
+padding-right: rem(50px);
 }
 
 .menu__accodeon-desc {
@@ -65,6 +115,18 @@ margin-top: rem(-20px);
 	width: 100%;
 line-height: 1.8;
 display: none;
+
+@include phones {
+	padding: rem(25px) rem(15px);
+}
+}
+.menu__accodeon-desc--active {
+	font-family:  Ubuntu;
+	font-size: rem(14px);
+	color: white;
+	padding: rem(60px) rem(30px);
+	width: 100%;
+line-height: 1.8;
 
 @include phones {
 	padding: rem(25px) rem(15px);
