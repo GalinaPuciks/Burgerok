@@ -431,7 +431,7 @@ template {
   font-style: normal; }
 
 html {
-  font-size: 16px; }
+  font-size: 1rem; }
   @media screen and (max-width: 768px) {
     html {
       font-size: 0.9375rem; } }
@@ -443,7 +443,7 @@ body {
   height: 100%; }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1328,7 +1328,6 @@ img {
   background: url("../img/img_map/map.jpg") center center/cover no-repeat; }
 
 .yandex-map {
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
