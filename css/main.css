@@ -1393,6 +1393,7 @@ img {
   background: url("../img/img_map/map.jpg") center center/cover no-repeat; }
 
 .yandex-map {
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1452,3 +1453,31 @@ img {
   @media screen and (max-width: 480px) {
     .footer__col_right {
       text-align: center; } }
+
+.phone__pic {
+  width: 0.75rem;
+  height: 0.75rem; }
+
+.socials {
+  position: relative;
+  top: 50%; }
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.625rem; }
+
+.socials__link {
+  display: inline-block;
+  max-width: 1.4375rem;
+  max-height: 1.25rem;
+  opacity: .3;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .socials__link:hover {
+    opacity: 1; }
+
+.socials__link-icon {
+  width: 1.25rem;
+  height: 1.25rem; }
