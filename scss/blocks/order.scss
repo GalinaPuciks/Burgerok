@@ -12,7 +12,7 @@
 
    color: #f9b43b;
    @include gagalin();
-   font-size: 72px;
+   font-size: rem(72px);
    font-weight: 400;
    line-height: 64.05px;
    margin-bottom: 12%;
@@ -20,12 +20,15 @@
     @include tablets {
         padding-top: 12%;
     }
+    @include phones {
+      font-size: rem(70px);
+    }
 }
 
   
 
   .order__form {
-    @extend %clearfix;
+    //@extend %clearfix;
     margin-left: -5%;
     @include tablets {
       margin-left: 0;
@@ -196,6 +199,9 @@
     @include ubuntu(middle);
     padding: rem(10px) rem(15px);
     cursor: pointer;
+    &:hover {
+      opacity: .5;
+    }
   }
   
   .order__form-button_reset {

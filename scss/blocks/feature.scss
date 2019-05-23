@@ -16,12 +16,18 @@
 
   .feature__desc h3  {
     @include lifehack;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
     margin-bottom: 10px;
+    @include phones {
+      font-size: rem(20px);
+    }
   }
   .feature__desc p {
     font-size: 14px;
+    @include phones {
+      font-size: rem(12px);
+    }
   }
   .best__item {
     justify-content: center;
@@ -43,6 +49,7 @@
   @include phones {
     position: static;
     transform: none;
+    width: 30%;
   }
 }
 

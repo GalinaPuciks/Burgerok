@@ -17,6 +17,8 @@
         text-align: center;
       }
     
+    
+    
   }
   
   .hero__desc {
@@ -24,5 +26,10 @@
     @include lifehack;
     line-height: 1;
     color: #fff;
+
+    @include phones {
+      font-size: rem(55px);
+    }
   }
 
+ 

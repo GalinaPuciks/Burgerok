@@ -36,10 +36,17 @@
     font-weight: 300;
     line-height: 24px;
     padding-right: 33px;
+    @include phones {
+      display: none;
+    }
   }
   
   .btn--bg-black {
     border: none;
+    &:hover {
+      background: #2f3234;
+      transition: opacity .3s;
+    }
   }
 
 

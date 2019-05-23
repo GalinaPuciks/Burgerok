@@ -6,7 +6,11 @@
 	left: 0;
 	right: 0;
   padding: rem(10px) 0;
-  height: rem(60px);
+	height: rem(60px);
+	
+	@include phones {
+		height: rem(120px);
+	}
 }
 
 .footer__container {
