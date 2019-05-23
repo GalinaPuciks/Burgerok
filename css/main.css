@@ -393,11 +393,11 @@ template {
 [hidden] {
   display: none; }
 
-.menu__list:before, .team-acco__content--active:before, .team-acco__content:before, .menu__list:after, .team-acco__content--active:after, .team-acco__content:after {
+.team-acco__content--active:before, .team-acco__content:before, .team-acco__content--active:after, .team-acco__content:after {
   content: "";
   display: table; }
 
-.menu__list:after, .team-acco__content--active:after, .team-acco__content:after {
+.team-acco__content--active:after, .team-acco__content:after {
   clear: both; }
 
 @font-face {
@@ -627,7 +627,8 @@ img {
       -webkit-transform: none;
       -ms-transform: none;
       transform: none;
-      width: 30%; } }
+      width: 30%;
+      margin-right: 1.25rem; } }
 
 .best__list {
   display: -webkit-box;
