@@ -43,6 +43,10 @@
     float: left;
     width: 45%;
     margin-left: 5%;
+    &:first-child {
+      margin-left: 0
+    }
+   
     @include tablets {
       width: 100%;
       float: none;
@@ -53,6 +57,14 @@
   .order__form-row {
     margin-bottom: rem(16px);
     display: flex;
+    &:last-child {
+      margin-bottom: 0;
+    }
+   @include tablets {
+     &:last-child {
+       margin-bottom: rem(16px);
+     }
+   }
     @include phones {
       margin-bottom: rem(7px);
     }

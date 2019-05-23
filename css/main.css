@@ -1342,6 +1342,8 @@ img {
   float: left;
   width: 45%;
   margin-left: 5%; }
+  .order__form-col:first-child {
+    margin-left: 0; }
   @media screen and (max-width: 768px) {
     .order__form-col {
       width: 100%;
@@ -1353,6 +1355,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .order__form-row:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .order__form-row:last-child {
+      margin-bottom: 1rem; } }
   @media screen and (max-width: 480px) {
     .order__form-row {
       margin-bottom: 0.4375rem; } }
