@@ -43,6 +43,7 @@
   
   .btn--bg-black {
     border: none;
+    cursor: pointer;
     &:hover {
       background: #2f3234;
       transition: opacity .3s;

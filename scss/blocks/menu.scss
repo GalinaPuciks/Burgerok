@@ -62,6 +62,7 @@
   color: white;
   text-decoration: none;
   @include ubuntu(medium);
+  cursor: pointer;
 
   &:hover {
       text-decoration: underline;

@@ -107,6 +107,7 @@ padding-left: rem(50px);
 padding-right: rem(50px);
 @include phones {
 	width: rem(200px);
+	font-size: rem(14px);
 }
 }
 
@@ -133,6 +134,7 @@ line-height: 1.8;
 
 @include phones {
 	padding: rem(25px) rem(15px);
+
 }
 }
 

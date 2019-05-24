@@ -40,11 +40,14 @@
   }
   
   .order__form-col {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+    //float: left;
     width: 45%;
     margin-left: 5%;
     &:first-child {
-      margin-left: 0
+    margin-left: 0;
+    
     }
    
     @include tablets {
