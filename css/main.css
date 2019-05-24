@@ -461,10 +461,6 @@ body {
 .section {
   height: 100vh;
   min-height: 40.625rem; }
-  @media screen and (max-width: 480px) {
-    .section {
-      min-height: 30rem;
-      height: 80vh; } }
 
 .container {
   max-width: 940px;
@@ -911,7 +907,7 @@ img {
       font-size: 0.75rem; } }
 
 .section-title {
-  font-size: 72px;
+  font-size: 4.5rem;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   margin-bottom: 45px;
   line-height: 1;
@@ -920,6 +916,9 @@ img {
     color: #000; }
   .section-title--centered {
     text-align: center; }
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 3.125rem; } }
 
 .down-arrow {
   display: block;
@@ -997,6 +996,9 @@ img {
     .section__title {
       margin-bottom: 0;
       padding-top: 12%; } }
+  @media screen and (max-width: 480px) {
+    .section__title {
+      font-size: 3.125rem; } }
 
 .team-acco__text-content {
   width: 70%; }
@@ -1062,12 +1064,19 @@ img {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   font-size: 4.5rem;
   font-weight: 400; }
+  @media screen and (max-width: 480px) {
+    .team__section {
+      font-size: 1.25rem;
+      padding-top: 60px; } }
 
 .team-acco__item {
   margin-bottom: 2.5rem; }
   @media screen and (max-width: 768px) {
     .team-acco__item {
       margin-bottom: 1.875rem; } }
+  @media screen and (max-width: 480px) {
+    .team-acco__item {
+      margin-bottom: 0.625rem; } }
   .team-acco__item:last-child {
     margin-bottom: 0; }
   .team-acco__item.active .team-acco__trigger {
@@ -1352,7 +1361,8 @@ img {
       padding-top: 12%; } }
   @media screen and (max-width: 480px) {
     .section__title-order {
-      font-size: 4.375rem; } }
+      font-size: 3.75rem;
+      margin-bottom: 0; } }
 
 .order__form {
   margin-left: -5%; }

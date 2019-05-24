@@ -8,7 +8,11 @@
     color: #f9b43b;
     @include gagalin;
     font-size: rem(72px);
-    font-weight: 400;
+		font-weight: 400;
+		@include phones {
+			font-size: rem(20px);
+			padding-top: 60px;
+		}
 }
 
 .team-acco__item {
@@ -16,7 +20,10 @@
   
  @include tablets {
 margin-bottom: rem(30px);
-  }
+	}
+@include phones {
+	margin-bottom: rem(10px);
+}
 
 	&:last-child {
 		margin-bottom: 0;
@@ -145,6 +152,7 @@ margin-bottom: rem(30px);
 	font-size: rem(14px);
 	color: #fff;
 	margin-bottom: rem(14px);
+
 }
 
 .team-acco__text-content {
