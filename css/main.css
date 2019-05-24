@@ -460,10 +460,10 @@ body {
 
 .section {
   height: 100vh;
-  min-height: 650px; }
+  min-height: 40.625rem; }
   @media screen and (max-width: 480px) {
     .section {
-      height: 90vh; } }
+      min-height: 30rem; } }
 
 .container {
   max-width: 940px;
