@@ -33,6 +33,9 @@ body {
 .section {
   height: 100vh;
   min-height: 650px;
+  @include phones {
+    height: 90vh;
+  }
 }
 
 .container {

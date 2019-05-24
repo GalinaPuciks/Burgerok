@@ -26,6 +26,11 @@
     color: #fff;
     opacity: 0;
     transition: opacity .3s;
+    @include phones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .review__text {
