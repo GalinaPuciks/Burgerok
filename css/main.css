@@ -463,7 +463,8 @@ body {
   min-height: 40.625rem; }
   @media screen and (max-width: 480px) {
     .section {
-      min-height: 30rem; } }
+      min-height: 30rem;
+      height: 80vh; } }
 
 .container {
   max-width: 940px;
