@@ -65,6 +65,7 @@ margin-top: rem(-20px);
 
 @include phones {
 	font-size: rem(26px);
+	top: 90%;
 }
 }
 .menu__accordeon-text--active {
@@ -82,6 +83,7 @@ margin-top: rem(-20px);
 
 @include phones {
 	font-size: rem(26px);
+	top: 90%;
 }
 }
 
@@ -108,6 +110,8 @@ padding-right: rem(50px);
 @include phones {
 	width: rem(200px);
 	font-size: rem(14px);
+	padding-left: rem(20px);
+	padding-right: rem(20px);
 }
 }
 
@@ -134,7 +138,7 @@ line-height: 1.8;
 
 @include phones {
 	padding: rem(25px) rem(15px);
-
+	
 }
 }
 

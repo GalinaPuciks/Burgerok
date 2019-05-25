@@ -461,6 +461,9 @@ body {
 .section {
   height: 100vh;
   min-height: 40.625rem; }
+  @media screen and (max-width: 480px) {
+    .section {
+      height: 95vh; } }
 
 .container {
   max-width: 940px;
@@ -549,7 +552,7 @@ img {
   color: #fff; }
   @media screen and (max-width: 480px) {
     .hero__desc {
-      font-size: 3.4375rem; } }
+      font-size: 2.5rem; } }
 
 .best {
   background: url("../img/img_best/bg.jpg") center center/cover no-repeat; }
@@ -918,7 +921,8 @@ img {
     text-align: center; }
   @media screen and (max-width: 480px) {
     .section-title {
-      font-size: 3.125rem; } }
+      font-size: 3.125rem;
+      margin-bottom: 0; } }
 
 .down-arrow {
   display: block;
@@ -1252,7 +1256,8 @@ img {
   margin-top: -1.25rem; }
   @media screen and (max-width: 480px) {
     .menu__accordeon-text {
-      font-size: 1.625rem; } }
+      font-size: 1.625rem;
+      top: 90%; } }
 
 .menu__accordeon-text--active {
   font-size: 2.5rem;
@@ -1272,7 +1277,8 @@ img {
   margin-top: -1.25rem; }
   @media screen and (max-width: 480px) {
     .menu__accordeon-text--active {
-      font-size: 1.625rem; } }
+      font-size: 1.625rem;
+      top: 90%; } }
 
 .menu__accordeon-content {
   height: 100%;
@@ -1295,7 +1301,9 @@ img {
   @media screen and (max-width: 480px) {
     .menu__accordeon-content--active {
       width: 12.5rem;
-      font-size: 0.875rem; } }
+      font-size: 0.875rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem; } }
 
 .menu__accodeon-desc {
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -1361,8 +1369,11 @@ img {
       padding-top: 12%; } }
   @media screen and (max-width: 480px) {
     .section__title-order {
-      font-size: 3.75rem;
-      margin-bottom: 0; } }
+      font-size: 3.125rem;
+      margin-bottom: 0;
+      line-height: 3.75rem;
+      padding-top: 0;
+      top: 0; } }
 
 .order__form {
   margin-left: -5%; }
@@ -1399,7 +1410,7 @@ img {
       margin-bottom: 1rem; } }
   @media screen and (max-width: 480px) {
     .order__form-row {
-      margin-bottom: 0.4375rem; } }
+      margin-bottom: 0.3125rem; } }
 
 .order__form-label {
   margin-bottom: 1.0625rem;
@@ -1543,7 +1554,7 @@ img {
   height: 3.75rem; }
   @media screen and (max-width: 480px) {
     .footer {
-      height: 7.5rem; } }
+      height: 5%; } }
 
 .footer__container {
   display: -webkit-box;
