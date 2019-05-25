@@ -70,7 +70,8 @@
   @include phones {
     flex-direction: row;
     width: 100%;
-    margin-bottom: rem(25px);
+    //margin-bottom: rem(25px);
+    margin-bottom: 0;
   }
 }
 
