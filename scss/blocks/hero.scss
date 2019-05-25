@@ -32,4 +32,10 @@
     }
   }
 
+  .hero__content-image {
+    @include phones {
+      width: 70%;
+    }
+  }
+
  
