@@ -1563,6 +1563,9 @@ img {
   right: 0;
   padding: 0.625rem 0;
   height: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 3%; } }
 
 .footer__container {
   display: -webkit-box;
