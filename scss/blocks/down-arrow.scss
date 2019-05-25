@@ -6,7 +6,9 @@
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background: url('../img/img_hero/arrow-scroll.svg');
+    @include phones {
+        bottom: rem(60px);
+    }
 
  }
 

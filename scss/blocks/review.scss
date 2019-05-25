@@ -26,6 +26,11 @@
     color: #fff;
     opacity: 0;
     transition: opacity .3s;
+    @include phones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .review__text {
@@ -36,8 +41,20 @@
     font-weight: 300;
     line-height: 24px;
     padding-right: 33px;
+    @include phones {
+      display: none;
+    }
   }
   
   .btn--bg-black {
     border: none;
+    cursor: pointer;
+    &:hover {
+      background: #2f3234;
+      transition: opacity .3s;
+    }
   }
+
+
+
+  

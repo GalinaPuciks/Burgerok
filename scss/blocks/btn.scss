@@ -1,5 +1,5 @@
 .btn {
-    padding: 10px 15px;
+    padding: rem(10px) rem(15px);
     border-radius: 5px;
     background-color: #e45028;
     text-transform: uppercase;
@@ -8,5 +8,8 @@
     font-weight: 500;
     display: inline-block;
     text-decoration: none;
+    @include phones {
+      font-size: rem(12px);
+    }
   }
   
