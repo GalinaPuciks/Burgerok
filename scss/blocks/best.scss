@@ -15,6 +15,9 @@
   .best__item {
     flex: 1;
     margin-right: rem(10px);
+    @include phones {
+      height: rem(200px);
+    }
    
   
     &:last-child {
