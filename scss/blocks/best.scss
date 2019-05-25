@@ -17,6 +17,7 @@
     margin-right: rem(10px);
     @include phones {
       height: rem(200px);
+      margin-bottom: 0;
     }
    
   
