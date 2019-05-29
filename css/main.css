@@ -1639,3 +1639,168 @@ img {
 .socials__link-icon {
   width: 1.25rem;
   height: 1.25rem; }
+
+.slider-menu {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f9b43b), color-stop(50%, #ec8e39), color-stop(80%, #f9b43b));
+  background: -webkit-linear-gradient(bottom, #f9b43b 20%, #ec8e39 50%, #f9b43b 80%);
+  background: -o-linear-gradient(bottom, #f9b43b 20%, #ec8e39 50%, #f9b43b 80%);
+  background: linear-gradient(to top, #f9b43b 20%, #ec8e39 50%, #f9b43b 80%);
+  position: relative; }
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.slider__menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.slider__menu-item, .slider__menu-desc {
+  width: 40%; }
+
+.slider__item-title {
+  color: #ffffff;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 63.93px; }
+
+.slider__item-desc {
+  color: #ffffff;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.97px;
+  margin-bottom: 2.25rem; }
+
+.slider__item-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+
+.slider__item-price {
+  font-size: 72px;
+  letter-spacing: -1.79px;
+  color: #e35028;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 28.08px; }
+
+.slider__item_valute {
+  letter-spacing: -0.75px;
+  color: #e35028;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 28.08px;
+  margin-right: 1.75rem; }
+
+.item__composition {
+  width: 90px;
+  height: 90px;
+  background-color: #f08c33;
+  border-radius: 5%;
+  position: relative; }
+
+.composition__title {
+  color: #ffffff;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.11px; }
+
+.item__composition-desc {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%; }
+
+.calories {
+  width: 90px;
+  height: 90px;
+  position: relative; }
+
+.calories__quantity {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.calories__desc {
+  position: relative; }
+
+.calories__pic, .calories__quantity {
+  position: absolute;
+  -webkit-transform: translate(-50%, -70%);
+  -ms-transform: translate(-50%, -70%);
+  transform: translate(-50%, -70%);
+  top: 60%;
+  left: 50%; }
+
+.calories__title {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+  top: 40%;
+  left: 50%; }
+
+.left-arrow {
+  width: 29px;
+  height: 14px;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  @media screen and (max-width: 480px) {
+    .left-arrow {
+      bottom: 3.75rem; } }
+
+.right-arrow {
+  width: 29px;
+  height: 14px;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  @media screen and (max-width: 480px) {
+    .right-arrow {
+      bottom: 3.75rem; } }
+
+.right-arrow {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.left-arrow {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
