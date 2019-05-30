@@ -16,6 +16,26 @@
 .slider__menu-item, .slider__menu-desc {
     width: 40%;
 }
+.slider__menu-item {
+    @include tablets {
+        width: 80%;
+    }
+    @include phones {
+        width: 100%;
+    }
+}
+.slider__menu-desc {
+    @include tablets {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include phones {
+        width: 100%;
+        
+    }
+}
 
 .slider__item-title {
 color: #ffffff;
@@ -23,6 +43,14 @@ color: #ffffff;
 font-size: 72px;
 font-weight: 400;
 line-height: 63.93px;
+@include tablets {
+    text-align: center;
+}
+@include phones {
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 43.93px;
+}
 }
 
 .slider__item-desc {
@@ -32,6 +60,11 @@ font-size: 14px;
 font-weight: 300;
 line-height: 23.97px;
 margin-bottom: rem(36px);
+@include phones {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
 }
 
 .slider__item-order {
@@ -46,6 +79,9 @@ color: #e35028;
 @include gagalin;
 font-weight: 400;
 line-height: 28.08px;
+@include phones {
+    font-size: 50px;
+}
 }
 
 .slider__item_valute {
@@ -65,6 +101,15 @@ background-color: #f08c33;
 //opacity: 0.4;
 border-radius: 5%;
 position: relative;
+@include tablets {
+    left: 10%;
+}
+@include phones {
+    left: 0;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
 }
 
 .composition__title {
@@ -73,6 +118,11 @@ position: relative;
     font-size: 14px;
     font-weight: 400;
     line-height: 28.11px;
+    @include phones {
+        font-size: 11px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
 }
 
 .item__composition-desc {
@@ -80,12 +130,27 @@ position: relative;
     transform: translate(-50%, -50%);
     top: 60%;
     left: 50%;
+    @include phones {
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .calories {
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     position: relative;
+    @include tablets {
+        right: 10%;
+        width: rem(60px);
+        height: rem(60px);
+    }
+    @include phones {
+        left: 0;
+    }
 }
 
 .calories__quantity {
@@ -96,6 +161,14 @@ color: #ffffff;
 font-size: 20px;
 font-weight: 400;
 line-height: 24px;
+@include tablets {
+    font-size: 15px;
+   font-weight: 400;
+   line-height: 24.02px;
+}
+@include phones {
+    font-size: 12px;
+}
 
 }
 
@@ -111,6 +184,12 @@ line-height: 24px;
     top: 60%;
     left: 50%;
 }
+.calories__pic {
+    @include phones {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+}
 
 .calories__title {
     opacity: 0.5;
@@ -122,8 +201,31 @@ line-height: 24px;
 text-align: center;
 position: absolute;
 transform: translate(-50%, -60%);
-top: 40%;
+bottom: -20%;
 left: 50%;
+@include tablets {
+    font-size: 13px;
+    bottom: -50%;
+}
+@include phones {
+    font-size: 12px;
+}
 
 
+}
+
+.main__item-pic {
+    margin-bottom: rem(20px);
+    @include tablets {
+        padding-top: rem(50px);
+    }
+    @include phones {
+        width: 80%;
+    }
+}
+
+.slider__menu-item {
+    @include tablets {
+        display: flex;
+    }
 }
