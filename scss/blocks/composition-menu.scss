@@ -1,0 +1,39 @@
+.item__composition-position {
+    display: flex;
+    margin-bottom: rem(20px);
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.composition-desc {
+    display: flex;
+}
+
+.item__composition-list {
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding: rem(20px);
+    border-radius: 5%;
+}
+
+.composition__name {
+    color: #2f3234;
+@include ubuntu;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+margin-right: rem(20px);
+}
+
+.composition__amount {
+color: #2f3234;
+@include ubuntu;
+}
+
+.item__composition-pic {
+    margin-right: rem(20px);
+}
+
