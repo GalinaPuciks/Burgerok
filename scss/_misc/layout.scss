@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 body {
   font-size: rem(16px);
   line-height: 1.42;
