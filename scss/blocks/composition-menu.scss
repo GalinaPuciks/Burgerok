@@ -2,6 +2,7 @@
     display: flex;
     margin-bottom: rem(20px);
     align-items: center;
+    justify-content: space-between;
     &:last-child {
         margin-bottom: 0;
     }
@@ -14,11 +15,20 @@
 
 .item__composition-list {
     background-color: #ffffff;
-    opacity: 0.9;
+    opacity: 0.5;
     padding: rem(20px);
-    border-radius: 5%;
+    border-radius: 3%;
+    position: absolute;
+    transform: translateX(rem(90px));
+    @include tablets {
+        transform: translateX(rem(105px));
+        padding: rem(40px);
+    };
+    
 }
-
+.item__composition {
+    cursor: pointer;
+}
 .composition__name {
     color: #2f3234;
 @include ubuntu;
@@ -37,3 +47,48 @@ color: #2f3234;
     margin-right: rem(20px);
 }
 
+.item__composition:hover {
+   background: #e35028;
+}
+
+.item__composition:hover .item__composition-list {
+        opacity: .9;
+    }
+
+.composition-menu-close {
+        vertical-align: middle;
+        height: rem(22px);
+        align-items: center;
+        display: none;
+        position: absolute;
+        transform: translateX(rem(340px));
+        //right: 50px;
+        //top: 30px;
+    
+        @include tablets {
+            display: inline-flex;
+        }
+    }
+.composition-menu-close__bars {
+    
+           display: contents;
+        &, &:before, &:after {
+            background: #fff;
+            width: rem(24px);
+            height: rem(5px);
+            border-radius: rem(3px);
+        }
+    
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+    
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
