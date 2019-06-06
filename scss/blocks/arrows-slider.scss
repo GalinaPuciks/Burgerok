@@ -33,3 +33,12 @@
 .left-arrow {
     transform: rotate(90deg);
 }
+
+.arrow {
+    width: 29px;
+    height: 14px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateX(-50%);
+}

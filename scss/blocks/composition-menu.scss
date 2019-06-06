@@ -15,7 +15,7 @@
 
 .item__composition-list {
     background-color: #ffffff;
-    opacity: 0.5;
+    opacity: 0;
     padding: rem(20px);
     border-radius: 3%;
     position: absolute;
@@ -48,12 +48,13 @@ color: #2f3234;
 }
 
 .item__composition:hover {
-   background: #e35028;
+ background: #e35028;
 }
 
 .item__composition:hover .item__composition-list {
-        opacity: .9;
-    }
+    opacity: .9;
+}
+
 
 .composition-menu-close {
         vertical-align: middle;
