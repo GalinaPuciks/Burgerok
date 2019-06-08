@@ -10,7 +10,7 @@
 }
 
 .composition-desc {
-    display: flex;
+    display: inline-flex;
 }
 
 .item__composition-list {
@@ -19,7 +19,14 @@
     padding: rem(20px);
     border-radius: 3%;
     position: absolute;
+
+    transition: opacity .4s;
+    right: -9999px;
+ 
+
     transform: translateX(rem(90px));
+ 
+ 
     @include tablets {
         transform: translateX(rem(105px));
         padding: rem(40px);
@@ -51,8 +58,10 @@ color: #2f3234;
  background: #e35028;
 }
 
-.item__composition:hover .item__composition-list {
+.composition-desc:hover .item__composition-list {
     opacity: .9;
+    transition: 0.4s ease;
+    right: inherit;
 }
 
 
@@ -72,7 +81,8 @@ color: #2f3234;
     }
 .composition-menu-close__bars {
     
-           display: contents;
+           //display: contents;
+           display: none;
         &, &:before, &:after {
             background: #fff;
             width: rem(24px);

@@ -1791,7 +1791,8 @@ img {
 .calories {
   width: 5.625rem;
   height: 5.625rem;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   @media screen and (max-width: 768px) {
     .calories {
       right: 10%;
@@ -2061,9 +2062,9 @@ img {
     margin-bottom: 0; }
 
 .composition-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .item__composition-list {
   background-color: #ffffff;
@@ -2071,6 +2072,10 @@ img {
   padding: 1.25rem;
   border-radius: 3%;
   position: absolute;
+  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
+  transition: opacity .4s;
+  right: -9999px;
   -webkit-transform: translateX(5.625rem);
   -ms-transform: translateX(5.625rem);
   transform: translateX(5.625rem); }
@@ -2104,8 +2109,12 @@ img {
 .item__composition:hover {
   background: #e35028; }
 
-.item__composition:hover .item__composition-list {
-  opacity: .9; }
+.composition-desc:hover .item__composition-list {
+  opacity: .9;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  right: inherit; }
 
 .composition-menu-close {
   vertical-align: middle;
@@ -2125,7 +2134,7 @@ img {
       display: inline-flex; } }
 
 .composition-menu-close__bars {
-  display: contents; }
+  display: none; }
   .composition-menu-close__bars, .composition-menu-close__bars:before, .composition-menu-close__bars:after {
     background: #fff;
     width: 1.5rem;
