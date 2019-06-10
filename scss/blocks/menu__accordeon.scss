@@ -1,3 +1,9 @@
+.product {
+	background: url('../img/img_menu/menu_bg.jpg') 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
 .menu__accordeon {
 	position: absolute;
 	right: 0;
@@ -9,45 +15,66 @@
 .menu__accordeon-item {
 	float: left;
 	height: 100%;
+	
+			&.active {
+											.menu__accordeon-text {
+																			color: $yellow;
+											}
+			}
+	}
+
+.section__title-accordeon {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: #ffffff;
+@include gagalin;
+	font-size: 72px;
+	font-weight: 400;
+	line-height: 64.05px;
+}
+
+.menu__accordeon-item--active .menu__accordeon-desc {
+animation: acco-text .8s linear forwards;
+}
+
+@keyframes acco-text {
+75% {opacity: 0; }
+to { opacity: 1; }
+}
+
+.menu__accordeon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+}
+
+.menu__accordeon-item {
+	height: 100%;
+    border: 1px solid black;
+  display: flex;
 
 	&.active {
-			.menu__accordeon-text {
-					color: $yellow;
-			}
+		.menu__accordeon-text {
+			color: $yellow;
+		}
 	}
 }
 
-.menu__accordeon-item--active {
-	float: left;
-	height: 100%;
-
-}
-
 .menu__accordeon-trigger {
-	width: rem(80px);
+	width: 80px;
 	display: block;
 	height: 100%;
-	float: left;
-	@include cover;
 	text-decoration: none;
-position: relative;
-
-@include phones {
-	width: rem(50px);
-}
-}
-.menu__accordeon-trigger--active {
-	width: rem(80px);
-
-	height: 100%;
-	float: left;
-	@include cover;
-	text-decoration: none;
-position: relative;
-
-@include phones {
-	width: rem(50px);
-}
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+  @include phones {
+    width: 50px;
+  }
 }
 
 .menu__accordeon-text {
@@ -68,94 +95,38 @@ margin-top: rem(-20px);
 	top: 90%;
 }
 }
-.menu__accordeon-text--active {
-	font-size: rem(40px);
-	color: #fff;
-	@include gagalin;
-	text-align: center;
-	white-space: nowrap;
-position: absolute;
-transform: rotate(-90deg) translateY(-50%);
-transform-origin: 0 0;
-left: 50%;
-top: 100%;
-margin-top: rem(-20px);
-
-@include phones {
-	font-size: rem(26px);
-	top: 90%;
-}
-}
-
 
 .menu__accordeon-content {
 	height: 100%;
-	float: left;
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+  transition: width .6s;
 }
 
-.menu__accordeon-content--active {
-	height: 100%;
-    float: right;
-	background: rgba(#2f3234, .93);
-	width: rem(300px);
-	z-index: 10;
-overflow: visible;
-color: #fff;
-padding-top: rem(50px);
-padding-left: rem(50px);
-padding-right: rem(50px);
-@include phones {
-	width: rem(200px);
-	font-size: rem(14px);
-	padding-left: rem(20px);
-	padding-right: rem(20px);
-}
+.menu__accordeon-item--active .menu__accordeon-content {
+  width: 540px;
 }
 
-.menu__accodeon-desc {
-	@include ubuntu(light);
-	font-size: rem(14px);
+.menu__accordeon-desc {
+	font-size: 14px;
 	color: #fff;
-	padding: rem(60px) rem(30px);
+	padding: 60px 8px;
 	width: 100%;
-line-height: 1.8;
-display: none;
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity .2s;
 
-@include phones {
-	padding: rem(25px) rem(15px);
-}
-}
-.menu__accodeon-desc--active {
-	font-family:  Ubuntu;
-	font-size: rem(14px);
-	color: white;
-	padding: rem(60px) rem(30px);
-	width: 100%;
-line-height: 1.8;
-
-@include phones {
-	padding: rem(25px) rem(15px);
-	
-}
+  @include phones {
+    padding: 25px 15px;
+  }
 }
 
-.product {
-	background: url('../img/img_menu/menu_bg.jpg') 50% no-repeat;
-	background-size: cover;
-	position: relative;
+.menu__accordeon-item--active .menu__accordeon-desc {
+  animation: acco-text .8s linear forwards;
 }
 
-.section__title-accordeon {
-	position: absolute;
-	top: 10%;
-	left: 10%;
-	color: #ffffff;
-  @include gagalin;
-	font-size: 72px;
-	font-weight: 400;
-	line-height: 64.05px;
+@keyframes accordeon-desc {
+  75% {opacity: 0; }
+  to { opacity: 1; }
 }
-
