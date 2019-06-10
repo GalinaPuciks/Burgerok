@@ -1,4 +1,4 @@
-.item__composition-position {
+.composition-list__item {
     display: flex;
     margin-bottom: rem(20px);
     align-items: center;
@@ -13,10 +13,13 @@
     display: inline-flex;
 }
 
-.item__composition-list {
+.composition-list {
     background-color: #ffffff;
     opacity: 0;
-    padding: rem(20px);
+    padding-top: rem(20px);
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+    padding-bottom: rem(20px);
     border-radius: 3%;
     position: absolute;
 
@@ -30,6 +33,10 @@
     @include tablets {
         transform: translateX(rem(105px));
         padding: rem(40px);
+    @include phones {
+        transform: translateX(rem(75px));
+        top: rem(20px);
+    }
     };
     
 }
@@ -58,10 +65,20 @@ color: #2f3234;
  background: #e35028;
 }
 
-.composition-desc:hover .item__composition-list {
+.composition-desc:hover .composition-list {
     opacity: .9;
     transition: 0.4s ease;
     right: inherit;
+}
+
+.composition-desc:hover .composition-menu-close__bars {
+    @include tablets {
+        display: contents;
+    }
+    @include phones {
+        display: contents;
+    }
+
 }
 
 
@@ -78,13 +95,16 @@ color: #2f3234;
         @include tablets {
             display: inline-flex;
         }
+        @include phones {
+            height: rem(60px);
+        }
     }
 .composition-menu-close__bars {
     
            //display: contents;
            display: none;
         &, &:before, &:after {
-            background: #fff;
+            background: #e35028;
             width: rem(24px);
             height: rem(5px);
             border-radius: rem(3px);
@@ -103,3 +123,31 @@ color: #2f3234;
             transform: rotate(-45deg);
         }
     }
+
+.no-hover {
+    background-color: #ffffff;
+    opacity: 0;
+    padding-top: rem(20px);
+    padding-left: rem(40px);
+    padding-right: rem(40px);
+    padding-bottom: rem(20px);
+    border-radius: 3%;
+    position: absolute;
+
+    transition: opacity .4s;
+    right: -9999px;
+ 
+
+    transform: translateX(rem(90px));
+ 
+ 
+    @include tablets {
+        transform: translateX(rem(105px));
+        padding: rem(40px);
+    }
+    @include phones {
+        transform: translateX(rem(75px));
+        top: rem(20px);
+    }
+    
+}
