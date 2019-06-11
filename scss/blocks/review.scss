@@ -41,6 +41,9 @@
     font-weight: 300;
     line-height: 24px;
     padding-right: 33px;
+    @include tablets {
+      margin-bottom: rem(10px);
+    }
     @include phones {
       display: none;
     }

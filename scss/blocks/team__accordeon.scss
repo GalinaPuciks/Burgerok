@@ -29,7 +29,7 @@ margin-bottom: rem(30px);
 		margin-bottom: 0;
 	}
 
-	&.active {
+	&--active {
 		.team-acco__trigger {
 			color:  #f9b43b;
 
@@ -40,9 +40,22 @@ margin-bottom: rem(30px);
 	}
 }
 
-.team-acco__content--active {
+.team-acco__item--active {
+	.team-acco__trigger {
+		color:  #f9b43b;
+
+		&:before {
+			transform: rotate(-180deg);
+		}
+	}
+}
+
+
+
+.team-acco__item--active .team-acco__content {
 	@extend %clearfix;
 	padding-top: rem(14px);
+	display: flex;
 
 
 	@include tablets {
@@ -50,6 +63,17 @@ margin-bottom: rem(30px);
 	}
 
 }
+
+///.team-acco__content--active {
+//	@extend %clearfix;
+//	padding-top: rem(14px);
+//
+//
+//	@include tablets {
+//		padding: 0 25%;
+//	}
+
+//}
  
 .team-acco__trigger {
 	color: #fff;

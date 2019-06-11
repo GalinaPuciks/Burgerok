@@ -393,11 +393,11 @@ template {
 [hidden] {
   display: none; }
 
-.team-acco__content--active:before, .team-acco__content:before, .team-acco__content--active:after, .team-acco__content:after {
+.team-acco__item--active .team-acco__content:before, .team-acco__content:before, .team-acco__item--active .team-acco__content:after, .team-acco__content:after {
   content: "";
   display: table; }
 
-.team-acco__content--active:after, .team-acco__content:after {
+.team-acco__item--active .team-acco__content:after, .team-acco__content:after {
   clear: both; }
 
 @font-face {
@@ -520,17 +520,6 @@ footer {
 
 img {
   max-width: 100%; }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(1, 1, 1, 0.8);
-  overflow: hidden;
-  display: none; }
 
 .slider__wrapper {
   display: -webkit-box;
@@ -802,6 +791,9 @@ img {
   font-weight: 300;
   line-height: 24px;
   padding-right: 33px; }
+  @media screen and (max-width: 768px) {
+    .review__text {
+      margin-bottom: 0.625rem; } }
   @media screen and (max-width: 480px) {
     .review__text {
       display: none; } }
@@ -1139,17 +1131,27 @@ img {
       margin-bottom: 0.625rem; } }
   .team-acco__item:last-child {
     margin-bottom: 0; }
-  .team-acco__item.active .team-acco__trigger {
+  .team-acco__item--active .team-acco__trigger {
     color: #f9b43b; }
-    .team-acco__item.active .team-acco__trigger:before {
+    .team-acco__item--active .team-acco__trigger:before {
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }
 
-.team-acco__content--active {
-  padding-top: 0.875rem; }
+.team-acco__item--active .team-acco__trigger {
+  color: #f9b43b; }
+  .team-acco__item--active .team-acco__trigger:before {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+
+.team-acco__item--active .team-acco__content {
+  padding-top: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media screen and (max-width: 768px) {
-    .team-acco__content--active {
+    .team-acco__item--active .team-acco__content {
       padding: 0 25%; } }
 
 .team-acco__trigger {
@@ -2259,14 +2261,36 @@ img {
   display: block;
   background: white;
   position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 35%;
+  width: 60%;
   height: 300px;
   z-index: 10; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #2f3234;
+  overflow: hidden;
+  display: none;
+  opacity: .9; }
+
+.popup__text {
+  color: #2f3234;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 1.25rem; }
 
 .full-review {
   padding: 1.5625rem 1.25rem;
