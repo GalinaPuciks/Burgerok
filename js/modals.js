@@ -6,10 +6,13 @@ const reviews = document.querySelector('.reviews__list'),
 
 reviews.addEventListener('click', e => {
   let element = e.target;
+ 
   
   if (element.tagName === "BUTTON") {
     let modalText = element.previousElementSibling.innerHTML;
-    let modalTitle = element.previousElementSibling +10 .innerHTML;
+    
+  
+    let modalTitle = element.previousElementSibling  .innerHTML;
   
     popupTitle.innerHTML = modalTitle;
     popupText.innerHTML = modalText;
