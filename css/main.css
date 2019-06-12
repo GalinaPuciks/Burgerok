@@ -1962,6 +1962,7 @@ img {
     opacity: 1; } }
 
 .left-arrow {
+  cursor: pointer;
   width: 29px;
   height: 14px;
   position: absolute;
@@ -1975,6 +1976,7 @@ img {
       bottom: 3.75rem; } }
 
 .right-arrow {
+  cursor: pointer;
   width: 29px;
   height: 14px;
   position: absolute;
