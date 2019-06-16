@@ -13,6 +13,7 @@
 
 <body>
   <div class="wrapper">
+      <div class="maincontent">
       <section class="section hero">
           <div class="container hero__container">
             <header class="header">
@@ -575,6 +576,28 @@
         </div>
     </section>
 
+    <section class="section video">
+        <div class="container">
+          <h2 class="section__title section__title_black section__title_center">Как мы работаем</h2>
+          <div class="player hidden">
+            <div class="player__wrapper">
+              <div id="yt-player"></div>
+              <div class="player__splash"></div>
+            </div>
+            <div class="player__controls">
+              <button class="player__start"></button>
+              <div class="player__playback">
+                <button class="player__playback-button"></button>
+              </div>
+              <div class="player__duration">
+                <span class="player__duration-completed">0:00</span> :
+                <span class="player__duration-estimate">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <section class="section order">
         <div class="container">
           <div class="section__title-order">Закажите доставку</div>
@@ -689,6 +712,9 @@
         </div>
       </footer>
     </section>
+    
+  </div>
+</div>
 
    
     
@@ -759,22 +785,23 @@
                     </li>
                   </ul>
 
-            
-            
-          
-
     </div>
-
 
 </div>
 
-  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./js/accordeon.js"> </script>
   <script src="./js/burger.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/slider2.js"></script>
- 
   <script src="./js/modals.js"></script>
+  <script src="./js/onePage.js"></script>
+  <script src="./js/player.js"></script>
+  <script src="./js/maps.js"></script>
+ 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAacuD8i_P9goyfYQ8x93QAVWPZW6pxGHg&callback=initMap" async defer></script>
 
 </body>
 </html>

@@ -6,14 +6,17 @@ const reviews = document.querySelector('.reviews__list'),
 
 reviews.addEventListener('click', e => {
   let element = e.target;
- 
+  let elem = element.previousElementSibling;
+  
+
+
   
   if (element.tagName === "BUTTON") {
     let modalText = element.previousElementSibling.innerHTML;
-    
+    let modalTitle =  elem.previousElementSibling.innerHTML;
   
-    let modalTitle = element.previousElementSibling  .innerHTML;
-  
+   
+
     popupTitle.innerHTML = modalTitle;
     popupText.innerHTML = modalText;
     overlay.style.display = "block";

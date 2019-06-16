@@ -71,9 +71,12 @@ to { opacity: 1; }
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
+	@include tablets {
+		width: rem(60px);
+	}
   
   @include phones {
-    width: 50px;
+    width: rem(40px);
   }
 }
 
@@ -106,6 +109,9 @@ margin-top: rem(-20px);
 
 .menu__accordeon-item--active .menu__accordeon-content {
   width: 540px;
+  @include phones {
+	  width: rem(250px);
+  }
 }
 
 .menu__accordeon-desc {
