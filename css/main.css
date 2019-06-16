@@ -474,7 +474,7 @@ body {
   overflow: hidden; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem; }
   @media screen and (max-width: 480px) {
     .section {
@@ -2412,7 +2412,8 @@ img {
 
 .player {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  left: 15%; }
   .player.hidden {
     opacity: 0;
     -webkit-transition: opacity .3s;
@@ -2426,8 +2427,9 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../img/bg/player-splash.jpg") center center/cover no-repeat;
-  cursor: pointer; }
+  background: url("../img/img_player/player-splash.png") center center/cover no-repeat;
+  cursor: pointer;
+  display: none; }
 
 .player__wrapper.active .player__splash {
   display: none; }
@@ -2438,7 +2440,8 @@ img {
   left: 0;
   right: 0;
   height: 35px;
-  background: #3e3e3e; }
+  background: #3e3e3e;
+  width: 41.25rem; }
 
 .player__start {
   width: 0;

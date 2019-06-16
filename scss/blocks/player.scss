@@ -5,6 +5,7 @@
 .player {
     position: relative;
     display: inline-block;
+    left: 15%;
   
     &.hidden {
       opacity: 0;
@@ -19,8 +20,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../img/bg/player-splash.jpg') center center / cover no-repeat;
+    background: url('../img/img_player/player-splash.png') center center / cover no-repeat;
     cursor: pointer;
+    display: none;
   }
   
   .player__wrapper {
@@ -36,6 +38,7 @@
     right: 0;
     height: 35px;
     background: #3e3e3e;
+    width: rem(660px);
   }
   
   .player__start {
