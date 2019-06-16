@@ -2,6 +2,14 @@ const sections = $(".section");
 const display = $(".maincontent");
 let inscroll = false;
 
+const switchActiveClassSideMenu = menuItemIndex => {
+    $('.fixed__menu-item')
+    .eq(menuItemIndex)
+    .addClass("active")
+    .siblings ()
+    .removeClass("active");
+}
+
 const performTransition = sectionEq => {
     if (inscroll) return;
         
@@ -11,26 +19,27 @@ const performTransition = sectionEq => {
     
         sections
         .eq(sectionEq)
-        .addClass("active-section")
+        .addClass("active")
         .siblings()
-        .removeClass("active-section");
+        .removeClass("active");
     
         display.css ({
             transform: `translateY(${position})`
         });
 
         setTimeout (() => {
+            switchActiveClassSideMenu(sectionEq);
             inscroll = false
         }, 1300); 
 };
 
 const scrollToSection = direction => {
-    const activeSection = sections.filter(".active-section");
+    const activeSection = sections.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
 
-    if (direction === "next" ) {
+    if (direction === "next" && nextSection.length ) {
         performTransition (nextSection.index());
     }
 
@@ -54,10 +63,24 @@ $(".wrapper").on ("wheel", e => {
 $(document).on("keydown", e => {
     switch (e.keyCode) {
         case 38:
-            scrollToSection("next");
-            break;
-        case 40:
             scrollToSection("prev");
             break;
+        case 40:
+            scrollToSection("next");
+            break;
     }
-})
+});
+
+$("[data-scroll-to]").on ("click", e => {
+    e.preventDefault();
+    const target = $(e.currentTarget).attr("data-scroll-to");
+
+    performTransition(target);
+});
+
+$(window).swipe({
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData){
+      const nextOrPrev = direction === "up" ? "next" : "prev";
+      scrollToSection(nextOrPrev);
+    }
+});

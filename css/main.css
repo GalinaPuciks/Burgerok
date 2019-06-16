@@ -1598,7 +1598,8 @@ img {
   background: transparent; }
 
 .map {
-  background: url("../img/img_map/map.jpg") center center/cover no-repeat; }
+  background: url("../img/img_map/map.jpg") center center/cover no-repeat;
+  position: relative; }
 
 .yandex-map {
   position: relative;
