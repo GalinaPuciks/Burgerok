@@ -607,11 +607,13 @@
                 <div class="order__form-row order__form-row_double">
                   <label class="order__form-block">
                     <div class="order__form-label">Имя</div>
-                    <input class="order__form-input" name="name" type="text" placeholder="Введите имя">
+                    <input class="order__form-input" name="name" type="text" placeholder="Введите имя" required>
+                    <div class="error-message"></div>
                   </label>
                   <label class="order__form-block">
                     <div class="order__form-label">Телефон</div>
-                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="Введите телефон">
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="Введите телефон" required>
+                    <div class="error-message"></div>
                   </label>
                 </div>
                 <div class="order__form-row">
@@ -643,7 +645,8 @@
                 <div class="order__form-row">
                   <label class="order__form-block">
                     <div class="order__form-label">Комментарий</div>
-                    <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment" required></textarea>
+                    <div class="error-message"></div>
                   </label>
                 </div>
                 <div class="order__form-buttons">
@@ -668,7 +671,7 @@
                   </div>
                   <div class="order__form-row">
                   
-                    <button class="btn order__form-button" name="" type="submit" value="Заказать"> Заказать </button>
+                    <button class="btn order__form-button" id="sendButton" name="" type="submit" value="Заказать"> Заказать </button>
                     <button class="btn order__form-button order__form-button_reset" name="" type="reset" value="Очистить"> Очистить </button> 
                     
                   </input>
@@ -743,6 +746,9 @@
       <li class="fixed__menu-item">
         <a href="" class="fixed__menu-link" data-scroll-to="7"></a>
       </li>
+      <li class="fixed__menu-item">
+        <a href="" class="fixed__menu-link" data-scroll-to="8"></a>
+      </li>
   
    
     </ul>
@@ -799,6 +805,7 @@
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="./js/player.js"></script>
   <script src="./js/maps.js"></script>
+  <script src="./js/form.js"></script>
 
  
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAacuD8i_P9goyfYQ8x93QAVWPZW6pxGHg&callback=initMap" async defer></script>
