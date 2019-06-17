@@ -149,6 +149,7 @@ position: relative;
         right: 10%;
         width: rem(60px);
         height: rem(60px);
+        top: rem(10px);
     }
     @include phones {
         left: 0;
@@ -220,6 +221,7 @@ left: 50%;
     margin-bottom: rem(20px);
     @include tablets {
         padding-top: rem(50px);
+        width: rem(505px);
     }
     @include phones {
         width: 80%;

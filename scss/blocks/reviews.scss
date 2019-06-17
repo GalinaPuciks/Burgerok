@@ -1,5 +1,6 @@
 .reviews {
   background: #000;
+  position: relative;
   @include tablets {
     min-height: rem(0px);
   }

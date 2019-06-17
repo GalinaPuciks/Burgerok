@@ -729,7 +729,8 @@ img {
     width: 65%; } }
 
 .reviews {
-  background: #000; }
+  background: #000;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .reviews {
       min-height: 0rem; } }
@@ -1865,7 +1866,8 @@ img {
     .calories {
       right: 10%;
       width: 3.75rem;
-      height: 3.75rem; } }
+      height: 3.75rem;
+      top: 0.625rem; } }
   @media screen and (max-width: 480px) {
     .calories {
       left: 0; } }
@@ -1928,7 +1930,8 @@ img {
   margin-bottom: 1.25rem; }
   @media screen and (max-width: 768px) {
     .main__item-pic {
-      padding-top: 3.125rem; } }
+      padding-top: 3.125rem;
+      width: 31.5625rem; } }
   @media screen and (max-width: 480px) {
     .main__item-pic {
       width: 80%; } }
@@ -2333,7 +2336,6 @@ img {
   display: block;
   background: white;
   position: absolute;
-  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -2344,7 +2346,7 @@ img {
   z-index: 10; }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -2412,6 +2414,14 @@ img {
 
 .video {
   background: url("../img/img_best/player__bg.png") center center/cover no-repeat; }
+
+.section__title_center {
+  color: #2f3234;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 61px;
+  font-weight: 400;
+  line-height: 54.18px;
+  text-align: center; }
 
 .player {
   position: relative;
