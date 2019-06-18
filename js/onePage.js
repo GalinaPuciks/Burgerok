@@ -40,7 +40,7 @@ const performTransition = sectionEq => {
   setTimeout(() => {
     inscroll = false;
     switchActiveClassInSideMenu(sectionEq);
-  }, 1000 + 300); // продолжительность транзишна + 300мс - время для завершения инерции тачустройств
+  }, 1000 + 300); 
 };
 
 const scrollToSection = direction => {
