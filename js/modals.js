@@ -2,7 +2,7 @@ const reviews = document.querySelector('.reviews__list'),
       overlay = document.querySelector('.overlay'),
       popupText = document.querySelector('.popup__text');
       popupTitle = document.querySelector ('.popup__title')
-      modalClose = document.querySelector('.hamburger-menu-close__bars');
+      modalClose = document.querySelector('.reviews-menu-close__bars');
 
 reviews.addEventListener('click', e => {
   let element = e.target;
@@ -26,6 +26,10 @@ reviews.addEventListener('click', e => {
   
   
   
+});
+modalClose.addEventListener('click', function (remove) {
+ remove.preventDefault();
+ overlay.style.display = 'none';
 });
 
 //закрытие по esc

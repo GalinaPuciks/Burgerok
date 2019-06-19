@@ -2,7 +2,7 @@
     display: block;
     background: white;
 	position: absolute;
-	position: fixed;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -13,7 +13,7 @@
 
   .overlay {
 	position: absolute;
-
+	//position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -31,7 +31,10 @@
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 24px;
-	padding: rem(20px);
+	padding: rem(30px);
+	@include phones {
+		padding: 10px;
+	}
   }
   
 .full-review {
@@ -89,3 +92,15 @@
 	color: $red;
 }
 
+.popup__title{
+	color: #2f3234;
+@include gagalin;
+font-size: 14px;
+font-weight: 400;
+line-height: 28.11px;
+padding-left: 30px;
+padding-top: 20px;
+@include tablets {
+	padding-top: 30px;
+}
+}

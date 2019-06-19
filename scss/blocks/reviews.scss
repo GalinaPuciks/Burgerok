@@ -30,3 +30,45 @@
     font-size: rem(14px);
   }
 }
+
+.reviews-menu-close {
+	vertical-align: middle;
+	height: rem(22px);
+	align-items: center;
+    //display: none;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+
+	@include tablets {
+		display: inline-flex;
+  }
+  @include phones {
+    right: 30px;
+    top: 10px;
+  }
+}
+.reviews-menu-close__bars {
+
+       display: contents;
+	&, &:before, &:after {
+		background: #e45028;;
+		width: rem(24px);
+		height: rem(5px);
+		border-radius: rem(3px);
+	}
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+    }
+    &:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+  }
+
+}
