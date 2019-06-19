@@ -1,7 +1,7 @@
-const fullscreen  = document.querySelector ('.fullscreen');тщву
-const close = document.querySelector ('.hamburger-menu-close__bars');
+const fullscreen  = document.querySelector ('.fullscreen');
+const hamburger = document.querySelector ('.hamburger-menu-link__bars');
 const body = document.querySelector ('body');
-const itemFullscreen = document.querySelectorAll ('.menu__item-fullscreen')
+const closeMenu = document.querySelectorAll ('.hamburger-menu-close__bars')
 
 hamburger.addEventListener('click', function (event) {
 event.preventDefault();
@@ -10,10 +10,7 @@ fullscreen.style.display = 'flex';
 });
 
 
-close.addEventListener('click', function (remove) {
-   remove.preventDefault();
-   fullscreen.style.display = 'none';
-  });
+
 
 fullscreen.addEventListener('click', function (directionSite) {
    directionSite.preventDefault();
