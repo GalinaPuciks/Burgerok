@@ -1,0 +1,13 @@
+.fixed__menu {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    padding: 0;
+    margin: 0;
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
+}

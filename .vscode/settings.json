@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "burgernaya"
+    "liveServer.settings.multiRootWorkspaceName": "burgernaya",
+    "git.ignoreLimitWarning": true
 }

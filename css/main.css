@@ -2478,9 +2478,13 @@ img {
   text-align: center; }
 
 .player {
+  width: 100%;
   position: relative;
   display: inline-block;
-  left: 15%; }
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .player {
+      text-align: center; } }
   .player.hidden {
     opacity: 0;
     -webkit-transition: opacity .3s;
@@ -2504,11 +2508,18 @@ img {
 .player__controls {
   position: absolute;
   bottom: 0;
-  left: 0;
   right: 0;
-  height: 35px;
+  height: 50px;
   background: #3e3e3e;
-  width: 41.25rem; }
+  width: 41.25rem;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -5%; }
+  @media screen and (max-width: 768px) {
+    .player__controls {
+      width: 44.0rem; } }
 
 .player__start {
   width: 0;
@@ -2542,7 +2553,7 @@ img {
 .player__playback {
   position: absolute;
   height: 4px;
-  width: 446px;
+  width: 27.875rem;
   background: #626262;
   top: 15px;
   left: 50px; }
@@ -2567,3 +2578,12 @@ img {
   right: 20px;
   color: #626262;
   font-weight: bold; }
+
+.volume_btn {
+  background: url("../img/img_player/Volum_gray.png");
+  position: absolute;
+  top: 7px;
+  right: 130px;
+  width: 18px;
+  height: 22px;
+  border: none; }

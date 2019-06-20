@@ -9,9 +9,6 @@ body.classList.add('hidden');
 fullscreen.style.display = 'flex';
 });
 
-
-
-
 fullscreen.addEventListener('click', function (directionSite) {
    directionSite.preventDefault();
    fullscreen.style.display = 'none';

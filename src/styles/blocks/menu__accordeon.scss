@@ -1,0 +1,138 @@
+.product {
+	background: url('../img/img_menu/menu_bg.jpg') 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.menu__accordeon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+}
+
+.menu__accordeon-item {
+	float: left;
+	height: 100%;
+	
+			&.active {
+											.menu__accordeon-text {
+																			color: $yellow;
+											}
+			}
+	}
+
+.section__title-accordeon {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	color: #ffffff;
+@include gagalin;
+	font-size: 72px;
+	font-weight: 400;
+	line-height: 64.05px;
+}
+
+.menu__accordeon-item--active .menu__accordeon-desc {
+animation: acco-text .8s linear forwards;
+}
+
+@keyframes acco-text {
+75% {opacity: 0; }
+to { opacity: 1; }
+}
+
+.menu__accordeon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+}
+
+.menu__accordeon-item {
+	height: 100%;
+    border: 1px solid black;
+  display: flex;
+
+	&.active {
+		.menu__accordeon-text {
+			color: $yellow;
+		}
+	}
+}
+
+.menu__accordeon-trigger {
+	width: 80px;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include tablets {
+		width: rem(60px);
+	}
+  
+  @include phones {
+    width: rem(40px);
+  }
+}
+
+.menu__accordeon-text {
+	font-size: rem(40px);
+	color: #fff;
+	@include gagalin;
+	text-align: center;
+	white-space: nowrap;
+position: absolute;
+transform: rotate(-90deg) translateY(-50%);
+transform-origin: 0 0;
+left: 50%;
+top: 100%;
+margin-top: rem(-20px);
+
+@include phones {
+	font-size: rem(26px);
+	top: 90%;
+}
+}
+
+.menu__accordeon-content {
+	height: 100%;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
+  transition: width .6s;
+}
+
+.menu__accordeon-item--active .menu__accordeon-content {
+  width: 540px;
+  @include phones {
+	  width: rem(250px);
+  }
+}
+
+.menu__accordeon-desc {
+	font-size: 14px;
+	color: #fff;
+	padding: 60px 8px;
+	width: 100%;
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity .2s;
+
+  @include phones {
+    padding: 25px 15px;
+  }
+}
+
+.menu__accordeon-item--active .menu__accordeon-desc {
+  animation: acco-text .8s linear forwards;
+}
+
+@keyframes accordeon-desc {
+  75% {opacity: 0; }
+  to { opacity: 1; }
+}

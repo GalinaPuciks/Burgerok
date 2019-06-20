@@ -1,0 +1,46 @@
+.left-arrow {
+    //display: block;
+    cursor: pointer;
+    width: 29px;
+    height: 14px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateX(-50%);
+    @include phones {
+        bottom: rem(60px);
+    }
+
+ }
+
+ .right-arrow {
+    //display: block;
+    cursor: pointer;
+    
+    width: 29px;
+    height: 14px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateX(-50%);
+    @include phones {
+        bottom: rem(60px);
+    }
+
+ }
+.right-arrow {
+    transform: rotate(-90deg);
+}
+
+.left-arrow {
+    transform: rotate(90deg);
+}
+
+.arrow {
+    width: 29px;
+    height: 14px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateX(-50%);
+}

@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
       <div class="maincontent">
-      <section class="section hero">
+      <section class="section hero active">
           <div class="container hero__container">
             <header class="header">
               <img src="./img/img_hero/logo.png" alt="mr burgers logo" class="logo">
@@ -589,6 +589,7 @@
               <div class="player__playback">
                 <button class="player__playback-button"></button>
               </div>
+              <button class="volume_btn" id="volume" onclick="editVolume ();"></button>
               <div class="player__duration">
                 <span class="player__duration-completed">0:00</span> :
                 <span class="player__duration-estimate">0:00</span>
@@ -722,7 +723,7 @@
    
     
     <ul class="fixed__menu">
-      <li class="fixed__menu-item">
+      <li class="fixed__menu-item active">
         <a href="" class="fixed__menu-link" data-scroll-to="0"></a>
       </li>
       <li class="fixed__menu-item">
@@ -796,18 +797,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
-  <script src="./js/accordeon.js"> </script>
-  <script src="./js/burger.js"></script>
-  <script src="./js/team.js"></script>
-  <script src="./js/slider2.js"></script>
-  <script src="./js/modals.js"></script>
-  <script src="./js/onePage.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="./js/player.js"></script>
-  <script src="./js/maps.js"></script>
-  <script src="./js/form.js"></script>
-
- 
+  <script src="./js/js_main.js"> </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAacuD8i_P9goyfYQ8x93QAVWPZW6pxGHg&callback=initMap" async defer></script>
 
 </body>

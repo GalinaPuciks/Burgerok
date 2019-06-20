@@ -98,3 +98,18 @@ function formatTime(time) {
 
   return minutes + ":" + formatedSeconds;
 }
+
+function editVolume () {				
+	if (player.getVolume() == 0) {
+		player.setVolume('100');
+	} else {
+		player.setVolume('0');
+	}
+}
+function editVolume () {				
+	if (player.getVolume() == 0) {
+		player.setVolume('100');
+	} else {
+		player.setVolume('0');
+	}
+}
