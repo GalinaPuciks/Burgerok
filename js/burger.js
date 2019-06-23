@@ -1,16 +1,17 @@
-const hamburger = document.querySelector ('.fullscreen');
-const fullscreen = document.querySelector('.hamburger-menu-link');
-const close = document.querySelector ('.hamburger-menu-close');
+const fullscreen  = document.querySelector ('.fullscreen');
+const hamburger = document.querySelector ('.hamburger-menu-link__bars');
 const body = document.querySelector ('body');
+const closeMenu = document.querySelectorAll ('.hamburger-menu-close__bars')
 
-fullscreen.addEventListener('click', function (event) {
+hamburger.addEventListener('click', function (event) {
 event.preventDefault();
 body.classList.add('hidden');
-hamburger.style.display = 'flex';
-})
+fullscreen.style.display = 'flex';
+});
 
-
-
-hamburger-menu-close.addEventListener ('click', function (c) {
+fullscreen.addEventListener('click', function (directionSite) {
+   directionSite.preventDefault();
    fullscreen.style.display = 'none';
-})
+  });
+
+

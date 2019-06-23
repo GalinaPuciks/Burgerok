@@ -1,18 +1,38 @@
 const reviews = document.querySelector('.reviews__list'),
       overlay = document.querySelector('.overlay'),
       popupText = document.querySelector('.popup__text');
+      popupTitle = document.querySelector ('.popup__title')
+      modalClose = document.querySelector('.reviews-menu-close__bars');
 
 reviews.addEventListener('click', e => {
   let element = e.target;
+  let elem = element.previousElementSibling;
+  
+
+
   
   if (element.tagName === "BUTTON") {
     let modalText = element.previousElementSibling.innerHTML;
-    
+    let modalTitle =  elem.previousElementSibling.innerHTML;
+  
+   
+
+    popupTitle.innerHTML = modalTitle;
     popupText.innerHTML = modalText;
     overlay.style.display = "block";
+   
   }
+
+  
+  
+  
+});
+modalClose.addEventListener('click', function (remove) {
+ remove.preventDefault();
+ overlay.style.display = 'none';
 });
 
+//закрытие по esc
 document.addEventListener('keyup', e => {
   let keyName = e.keyCode;
   

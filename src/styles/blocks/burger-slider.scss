@@ -1,0 +1,13 @@
+.burger__slider-list, .burger__slider-list--active {
+    display: flex;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ .burger__slider-list {
+     display: none;
+     overflow: hidden;
+ }

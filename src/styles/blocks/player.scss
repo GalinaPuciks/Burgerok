@@ -1,0 +1,137 @@
+.video {
+    background: url('../img/img_best/player__bg.png') center center / cover no-repeat;
+  }
+
+  .section__title_center {
+    color: #2f3234;
+    @include gagalin;
+    font-size: 61px;
+    font-weight: 400;
+    line-height: 54.18px;
+    text-align: center;
+  }
+
+.player {
+  width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    //left: 15%;
+    @include tablets {
+      text-align: center;
+    }
+  
+    &.hidden {
+      opacity: 0;
+      transition: opacity .3s;
+    }
+  }
+  
+  .player__splash {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/img_player/player-splash.png') center center / cover no-repeat;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .player__wrapper {
+    &.active .player__splash {
+      display: none;
+    }
+  }
+  
+  .player__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    background: #3e3e3e;
+    width: rem(660px);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -5%;
+    @include tablets {
+      width:  44.0rem;
+    }
+  }
+  
+  .player__start {
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-left-color: #626262;
+    padding: 0;
+    border-right-width: 0;
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    outline: none;
+    &.paused {
+      width: 14px;
+      height: 22px;
+      border: none;
+      &:after,
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 5px;
+        top: 0;
+        bottom: 0;
+        background: #626262;
+      }
+      &:after {
+        right: 0;
+      }
+      &:before {
+        left: 0;
+      }
+    }
+  }
+  
+  .player__playback {
+    position: absolute;
+    height: 4px;
+    width: rem(446px);
+    background: #626262;
+    top: 15px;
+    left: 50px;
+  }
+  
+  .player__playback-button {
+    background: #626262;
+    border-radius: 50px;
+    border: none;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    position: absolute;
+    top: -4px;
+    transform: translateX(-50%);
+    left: 0;
+  }
+  
+  .player__duration {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    color: #626262;
+    font-weight: bold;
+  }
+
+  .volume_btn{
+    background: url('../img/img_player/Volum_gray.png');
+    position: absolute;
+    top: 7px;
+    right: 130px;
+    width: 18px;
+    height: 22px;
+    border: none;
+  
+  }

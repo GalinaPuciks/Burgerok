@@ -1,0 +1,17 @@
+.down-arrow {
+    display: block;
+    width: 29px;
+    height: 14px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include phones {
+        bottom: rem(60px);
+    }
+
+ }
+
+
+
+  

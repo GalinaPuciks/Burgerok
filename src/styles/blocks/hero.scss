@@ -1,0 +1,41 @@
+.hero {
+    background: url('../img/img_hero/bg-main1.jpg') center center / cover no-repeat; 
+    position: relative;
+  }
+  .hero__container {
+    justify-content: flex-start;
+  }
+  
+  .hero__content {
+    flex: .8;
+    display: flex;
+    align-items: center;
+    
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+    
+    
+  }
+  
+  .hero__desc {
+    font-size: rem(65px);
+    @include lifehack;
+    line-height: 1;
+    color: #fff;
+
+    @include phones {
+      font-size: rem(40px);
+    }
+  }
+
+  .hero__content-image {
+    @include phones {
+      width: 70%;
+    }
+  }
+
+ 

@@ -13,7 +13,8 @@
 
 <body>
   <div class="wrapper">
-      <section class="section hero">
+      <div class="maincontent">
+      <section class="section hero active">
           <div class="container hero__container">
             <header class="header">
               <img src="./img/img_hero/logo.png" alt="mr burgers logo" class="logo">
@@ -21,30 +22,30 @@
                 <nav class="menu">
                   <ul class="menu__list">
                     <li class="menu__item">
-                      <a href="#" class="menu__link">О нас</a>
+                      <a href="" class="menu__link" data-scroll-to="1">О нас</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Бургеры</a>
+                      <a href="" class="menu__link" data-scroll-to="2">Бургеры</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Команда</a>
+                      <a href="" class="menu__link" data-scroll-to="3">Команда</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Меню</a>
+                      <a href="" class="menu__link" data-scroll-to="4">Меню</a>
                     </li>
                     <li class="menu__item">
-                      <a href= "" data-scroll-to="5" class="menu__link">Отзывы</a>
+                      <a href= ""  class="menu__link" data-scroll-to="5">Отзывы</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Как мы работаем</a>
+                      <a href="" class="menu__link" data-scroll-to="6">Как мы работаем</a>
                     </li>
                     <li class="menu__item">
-                      <a href="#" class="menu__link">Контакты</a>
+                      <a href="" class="menu__link" data-scroll-to="8">Контакты</a>
                     </li>
                   </ul>
                 </nav>
                 <div class="header__links">
-                  <a class="btn header__order-btn" href="" data-scroll-to="6">Заказать</a>
+                  <a class="btn header__order-btn" href="" data-scroll-to="7">Заказать</a>
                   <a class="hamburger-menu-link" href="">
                     <div class="hamburger-menu-link__bars"></div>
                   </a>
@@ -62,7 +63,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="down-arrow">
+            <a href=""  data-scroll-to="1" class="down-arrow">
               <svg class="down-arrow__icon">
                 <use xlink:href="./img/sprite/sprite.svg#arrow-scroll"></use>
               </svg>
@@ -119,7 +120,7 @@
 
 
     <section class="section slider-menu">
-            <a href="#" class="left-arrow">
+            <a class="left-arrow" onclick="minusSlide()">
                 <svg class="left-arrow__icon">
                   <use xlink:href="./img/sprite/sprite.svg#arrow-scroll"></use>
                 </svg>
@@ -129,80 +130,6 @@
           <ul class="burger-menu">
 
 
-            <li class="burger__slider-list--active">
-                <div class="slider__menu-item">  
-                  <div class="composition-desc">
-                      <ul class="composition-list">
-                          <li class="composition-list__item">
-                            <img src="./img/img_slider/head.png" class="item__composition-pic" alt="">
-                            <div class="composition__name"> Говядина </div>
-                            <div class="composition__amount"> 300 г.</div>
-                          </li>
-                          <li class="composition-list__item">
-                            <img src="./img/img_slider/buns.png" class="item__composition-pic" alt="">
-                            <div class="composition__name"> Булочки </div>
-                            <div class="composition__amount"> 100 г.</div>
-                          </li>
-                          <li class="composition-list__item">
-                            <img src="./img/img_slider/salad.png" class="item__composition-pic" alt="">
-                            <div class="composition__name"> Зелень </div>
-                            <div class="composition__amount"> 70 г.</div>
-                          </li>
-                          <li class="composition-list__item">
-                            <img src="./img/img_slider/sauce.png" class="item__composition-pic" alt="">
-                            <div class="composition__name"> Соус </div>
-                            <div class="composition__amount"> 150 г.</div>
-                          </li>
-                          <li class="composition-list__item">
-                            <img src="./img/img_slider/cucumber.png" class="item__composition-pic" alt="">
-                            <div class="composition__name"> Овощи </div>
-                            <div class="composition__amount"> 200 г.</div>
-                          </li>
-                          <li class="composition-list__item">
-                          <img src="./img/img_slider/cheese.png" class="item__composition-pic" alt="">
-                          <div class="composition__name"> Сыр </div>
-                          <div class="composition__amount"> 80 г.</div>
-                          </li>
-                        </ul>
-                    
-                      <div class="item__composition">
-                          <div class="item__composition-desc">
-                              <img src="./img/img_slider/burger-icon.png" alt="">
-                              <h3 class="composition__title"> Состав </h3>
-            
-                          </div>
-                       
-                        </div>
-                        <a class="composition-menu-close" href="">
-                            <div class="composition-menu-close__bars"></div>
-                       </a>
-                      
-                  </div>
-                 
-                 
-                  
-                    <div class="main__item-pic">
-                      <img src="./img/img_slider/dark_burger.png" alt="">
-                    </div>
-                    <div class="calories">
-                     
-                              <img src="./img/img_slider/kkal.png" class="calories__pic" alt="">
-                              <div class="calories__quantity"> 1200 </div>
-                        
-                        <div class="calories__title">ккал </div>
-                    </div>
-                  </div>
-                  <div class="slider__menu-desc">
-                    <h1 class="slider__item-title"> Dark beef burger </h1>
-                    <div class="slider__item-desc"> Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско. </div>
-                       <div class="slider__item-order"> 
-                         <div class="slider__item-price">500  </div>
-                         <div class="slider__item_valute">рублей </div>
-                              <button class="btn order__form-button" name="" type="submit" value="Заказать"> Заказать </button>
-                      </div>
-                  </div>
-            </li>
-
             <li class="burger__slider-list">
                 <div class="slider__menu-item">  
                   <div class="composition-desc">
@@ -272,7 +199,7 @@
                        <div class="slider__item-order"> 
                          <div class="slider__item-price">500  </div>
                          <div class="slider__item_valute">рублей </div>
-                              <button class="btn order__form-button" name="" type="submit" value="Заказать"> Заказать </button>
+                              <button class="btn order__form-button" name="" type="submit" value="Заказать" data-scroll-to="7"> Заказать </button>
                       </div>
                   </div>
             </li>
@@ -330,7 +257,7 @@
                  
                   
                     <div class="main__item-pic">
-                      <img src="./img/img_slider/dark_burger.png" alt="">
+                      <img src="./img/img_slider/Spicy_Shrimp_Burger.png" alt="">
                     </div>
                     <div class="calories">
                      
@@ -346,7 +273,81 @@
                        <div class="slider__item-order"> 
                          <div class="slider__item-price">500  </div>
                          <div class="slider__item_valute">рублей </div>
-                              <button class="btn order__form-button" name="" type="submit" value="Заказать"> Заказать </button>
+                              <button class="btn order__form-button" name="" type="submit" value="Заказать" data-scroll-to="7"> Заказать </button>
+                      </div>
+                  </div>
+            </li>
+
+            <li class="burger__slider-list">
+                <div class="slider__menu-item">  
+                  <div class="composition-desc">
+                      <ul class="composition-list">
+                          <li class="composition-list__item">
+                            <img src="./img/img_slider/head.png" class="item__composition-pic" alt="">
+                            <div class="composition__name"> Говядина </div>
+                            <div class="composition__amount"> 300 г.</div>
+                          </li>
+                          <li class="composition-list__item">
+                            <img src="./img/img_slider/buns.png" class="item__composition-pic" alt="">
+                            <div class="composition__name"> Булочки </div>
+                            <div class="composition__amount"> 100 г.</div>
+                          </li>
+                          <li class="composition-list__item">
+                            <img src="./img/img_slider/salad.png" class="item__composition-pic" alt="">
+                            <div class="composition__name"> Зелень </div>
+                            <div class="composition__amount"> 70 г.</div>
+                          </li>
+                          <li class="composition-list__item">
+                            <img src="./img/img_slider/sauce.png" class="item__composition-pic" alt="">
+                            <div class="composition__name"> Соус </div>
+                            <div class="composition__amount"> 150 г.</div>
+                          </li>
+                          <li class="composition-list__item">
+                            <img src="./img/img_slider/cucumber.png" class="item__composition-pic" alt="">
+                            <div class="composition__name"> Овощи </div>
+                            <div class="composition__amount"> 200 г.</div>
+                          </li>
+                          <li class="composition-list__item">
+                          <img src="./img/img_slider/cheese.png" class="item__composition-pic" alt="">
+                          <div class="composition__name"> Сыр </div>
+                          <div class="composition__amount"> 80 г.</div>
+                          </li>
+                        </ul>
+                    
+                      <div class="item__composition">
+                          <div class="item__composition-desc">
+                              <img src="./img/img_slider/burger-icon.png" alt="">
+                              <h3 class="composition__title"> Состав </h3>
+            
+                          </div>
+                       
+                        </div>
+                        <a class="composition-menu-close" href="">
+                            <div class="composition-menu-close__bars"></div>
+                       </a>
+                      
+                  </div>
+                 
+                 
+                  
+                    <div class="main__item-pic">
+                      <img src="./img/img_slider/NYC-Diner-Bacon-Cheeseburger.png" alt="">
+                    </div>
+                    <div class="calories">
+                     
+                              <img src="./img/img_slider/kkal.png" class="calories__pic" alt="">
+                              <div class="calories__quantity"> 1200 </div>
+                        
+                        <div class="calories__title">ккал </div>
+                    </div>
+                  </div>
+                  <div class="slider__menu-desc">
+                    <h1 class="slider__item-title"> Dark beef burger </h1>
+                    <div class="slider__item-desc"> Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско. </div>
+                       <div class="slider__item-order"> 
+                         <div class="slider__item-price">500  </div>
+                         <div class="slider__item_valute">рублей </div>
+                              <button class="btn order__form-button" name="" type="submit" value="Заказать" data-scroll-to="7"> Заказать </button>
                       </div>
                   </div>
             </li>
@@ -363,11 +364,17 @@
      
         </div>
       </div>
-      <a href="#" class="right-arrow">
+      <a class="right-arrow" onclick="plusSlide()">
         <svg class="right-arrow__icon">
           <use xlink:href="./img/sprite/sprite.svg#arrow-scroll"></use>
         </svg>
       </a>
+
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+          <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+          <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+      </div>
      
     </section>
 
@@ -557,10 +564,40 @@
       </ul>
       <div class="overlay">
           <div class="popup">
+              <a class="reviews-menu-close" href="">
+                  <div class="reviews-menu-close__bars"></div>
+              </a>
+              <div class="popups">
+                  <div class="popup__title"></div>
+                  <div class="popup__text"></div>
+              </div>
             <div class="popup__text"></div>
           </div>
         </div>
     </section>
+
+    <section class="section video">
+        <div class="container">
+          <h2 class="section__title section__title_black section__title_center">Как мы работаем</h2>
+          <div class="player hidden">
+            <div class="player__wrapper">
+              <div id="yt-player"></div>
+              <div class="player__splash"></div>
+            </div>
+            <div class="player__controls">
+              <button class="player__start"></button>
+              <div class="player__playback">
+                <button class="player__playback-button"></button>
+              </div>
+              <button class="volume_btn" id="volume" onclick="editVolume ();"></button>
+              <div class="player__duration">
+                <span class="player__duration-completed">0:00</span> :
+                <span class="player__duration-estimate">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section class="section order">
         <div class="container">
@@ -571,11 +608,13 @@
                 <div class="order__form-row order__form-row_double">
                   <label class="order__form-block">
                     <div class="order__form-label">Имя</div>
-                    <input class="order__form-input" name="name" type="text" placeholder="">
+                    <input class="order__form-input" name="name" type="text" placeholder="Введите имя" required>
+                    <div class="error-message"></div>
                   </label>
                   <label class="order__form-block">
                     <div class="order__form-label">Телефон</div>
-                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="Введите телефон" required>
+                    <div class="error-message"></div>
                   </label>
                 </div>
                 <div class="order__form-row">
@@ -607,7 +646,8 @@
                 <div class="order__form-row">
                   <label class="order__form-block">
                     <div class="order__form-label">Комментарий</div>
-                    <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment" required></textarea>
+                    <div class="error-message"></div>
                   </label>
                 </div>
                 <div class="order__form-buttons">
@@ -632,7 +672,7 @@
                   </div>
                   <div class="order__form-row">
                   
-                    <button class="btn order__form-button" name="" type="submit" value="Заказать"> Заказать </button>
+                    <button class="btn order__form-button" id="sendButton" name="" type="submit" value="Заказать"> Заказать </button>
                     <button class="btn order__form-button order__form-button_reset" name="" type="reset" value="Очистить"> Очистить </button> 
                     
                   </input>
@@ -676,40 +716,42 @@
         </div>
       </footer>
     </section>
+    
+  </div>
+</div>
 
    
     
     <ul class="fixed__menu">
-      <li class="fixed__menu-item  active">
-        <a href="" class="fixed__menu-link"></a>
+      <li class="fixed__menu-item active">
+        <a href="" class="fixed__menu-link" data-scroll-to="0"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="1"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="2"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="3"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="4"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="5"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="6"></a>
       </li>
       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="7"></a>
       </li>
       <li class="fixed__menu-item">
-      <a href="" class="fixed__menu-link"></a>
+        <a href="" class="fixed__menu-link" data-scroll-to="8"></a>
       </li>
-       <li class="fixed__menu-item">
-        <a href="" class="fixed__menu-link"></a>
-      </li>
+  
+   
     </ul>
 
     <div class="fullscreen">
@@ -724,43 +766,39 @@
             
                 <ul class="menu__list-fullscreen">
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">О нас</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="1">О нас</a>
                     </li>
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">Бургеры</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="2">Бургеры</a>
                     </li>
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">Команда</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="3">Команда</a>
                     </li>
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">Меню</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="4">Меню</a>
                     </li>
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">Отзывы</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="5">Отзывы</a>
                     </li>
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">Как мы работаем</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="6">Как мы работаем</a>
                     </li>
                     <li class="menu__item-fullscreen">
-                      <a href="#" class="menu__link-fullscreen">Контакты</a>
+                      <a href="" class="menu__link-fullscreen" data-scroll-to="7">Контакты</a>
                     </li>
                   </ul>
 
-            
-            
-          
-
     </div>
-
 
 </div>
 
-  </div>
-  <script src="./js/accordeon.js"> </script>
-  <script src="./js/burger.js"></script>
-  <script src="./js/team.js"></script>
-  <script src="./js/slider.js"></script>
-  <script src="./js/modals.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+  <script src="./js/js_main.js"> </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAacuD8i_P9goyfYQ8x93QAVWPZW6pxGHg&callback=initMap" async defer></script>
 
 </body>
 </html>

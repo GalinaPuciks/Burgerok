@@ -1,0 +1,15 @@
+.btn {
+    padding: rem(10px) rem(15px);
+    border-radius: 5px;
+    background-color: #e45028;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    @include phones {
+      font-size: rem(12px);
+    }
+  }
+  
